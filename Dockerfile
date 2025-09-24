@@ -19,7 +19,7 @@ RUN useradd -m -s /bin/bash ubuntu && \
 WORKDIR /home/ubuntu
 
 # Clona automáticamente tu repo de GitHub (opcional, reemplaza el enlace)
-# RUN git clone https://github.com/tu-usuario/tu-repo.git
+# RUN git clone https://github.com/yoncrzz/appweb.git
 
 # Puerto expuesto (Railway asigna automáticamente uno en PORT)
 EXPOSE 8080
