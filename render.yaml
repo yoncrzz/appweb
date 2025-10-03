@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: kali-server
+    env: docker
+    plan: free
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ROOT_PASSWORD
+        value: toor
+    healthCheckPath: /
