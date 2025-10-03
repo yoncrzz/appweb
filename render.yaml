@@ -1,0 +1,12 @@
+# render.yaml - construir desde el repo usando Dockerfile
+services:
+  - type: web
+    name: kali-build-from-repo
+    env: docker
+    plan: standard
+    branch: main
+    dockerfilePath: Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: KALI_META
+        value: kali-linux-large
